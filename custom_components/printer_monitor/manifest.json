@@ -1,0 +1,14 @@
+{
+  "domain": "printer_monitor",
+  "name": "printer_monitor",
+  "codeowners": ["@enicky"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/printer_monitor",
+  "homekit": {},
+  "iot_class": "local_polling",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "version": "1.0.0"
+}

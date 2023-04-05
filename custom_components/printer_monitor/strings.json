@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "New Printer Monitor Integrations",
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]",
+          "api_key": "[%key:common::config_flow::data::api_key%]"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]",
+      "not_supported": "Only Nicky's Prusa is supported"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "entity_id": "step_entity_id"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "printer_state": {
+        "state": {
+          "cancelling": "Cancelling",
+          "idle": "Idle",
+          "paused": "Paused",
+          "pausing": "Pausing",
+          "printing": "Printing"
+        }
+      }
+    }
+  }
+}
